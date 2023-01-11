@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1260px;
+    height: 2800px;
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: #f4f4f4;
+}
+
+#principal{
+    width: 100%;
+    height: auto;
+}
+
+
+
+#cabecalho{
+    width: 100%;
+    height: 110px;
+    background: url(../imagens/fundo-menu.png);
+}
+
+#cabecalho_superior{
+    width: 100%;
+    height: 5px;
+}
+
+.fundo_branco{
+    background-color: white;
+}
+
+.fundo_principal{
+    background-color: #00A1DF;
+}
+
+#menu_cima{
+    width: 100%;
+    height: 25px;
+    background: #f4f4f4;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#menu_cima ul{
+    width: 500px;
+    float: right;
+    margin-right: 0px;
+    padding-right: 25px;
+}
+
+#menu_cima ul li{
+    display: inline;
+    margin-left: 10px;
+}
+
+#menu_cima ul li a{
+    color: #000;
+}
+
+#menu_cima ul li a:hover{
+    color:red;
+}
+
+#cabecalho_meio{
+    width: 100%;
+    height: 98px;
+    position: relative;
+}
+
+#cabecalho_meio h1{
+    text-indent: -9999px;
+    width: 175px;
+    height: 98px;
+    position: absolute;
+    background: url(../Imagens/BreTEC\ PC.png) 
+    no-repeat top right;
+    margin-left: 10px;
+}
+
+.sacola{
+    background: url(../Imagens/carrinho.png)
+    no-repeat top right;
+    width: 300px;
+    float: right;
+    font-size: 12px;
+    position:absolute;
+    top: 10px;
+    right: 50px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.container {
+    width: 50%; /* define a largura do campo */
+    height: 20px;
+    position: relative;  /* cria o contexto de posicionamento do botão */ 
+    margin: 20px 250px;
+    
+  }
+  label {display:block;}
+  input {
+    width: 100%;/* define a largura do campo igual a largura do container */
+    margin: 40px 0px ;
+
+} 
+  input,  button {padding: 10px;}
+  button {
+    height: 40px;
+    position: absolute;   
+    top: 0; 
+    right: 0;
+    /* posiciona o botão em relação ao container, mas
+    como o campo está exatamente contido no container
+    o posicionamento se dá também em relação ao campo */
+  }
+  
+  form button[type=submit] {
+    position: absolute;
+    background: none;
+    border: none;
+    
+    color: #7a7a7a;
+    margin: 40px auto;
+}
+
+.material-icons {
+    font-family: Material Icons;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+}
+
+.hidden-xl-down, .visible-print-block {
+    display: none!important;
+}
+
+
+#cabecalho_inferior{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    line-height: 22px;
+    margin: 80px auto;
+}
+
+
+
+#menu_principal{
+    width: 600px;
+    height: 25px;
+    padding-top: 5px;
+    margin: 2px auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+#menu_principal ul{
+    list-style: none;
+    font-family: "Trebuchet MS";
+}
+
+#menu_principal ul li{
+    display: inline;
+    margin-left: 5px;
+    padding: 5px 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.linha-vertical{
+    border-right: 1px solid white;
+}
+
+#menu_principal ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#menu_principal ul li a:hover{
+    color:antiquewhite;
+}
+
+
+.banner{
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    background-color: #00A1DF;
+    margin-left: 30px;
+}
+
+img{
+    max-width: 100%;
+}
+
+#corpo{
+    width: 600px;
+    height: auto;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+#corpo-loja{
+    width: 1200px;
+    height: 1190px;
+    margin-top: 10px;
+}
+
+.categorias{
+    width: 219px;
+    height: auto;
+    float: left;
+    margin-right: 8px;
+    border: solid 1px #ccc;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.categorias h2{
+    width: 208px;
+    height: 19px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.categorias ul{
+    width: 219px;
+    list-style: none;
+}
+
+.categorias ul li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.categorias ul li a:hover{
+    color: red;
+}
+
+.categorias ul ul{
+    width: 100%;
+    background: #fff;
+}
+
+.categorias ul ul li{
+    border-bottom: solid 1px #ccc;
+    padding: 10px 0 10px 15px;
+}
+
+.categorias ul ul li a{
+    color: #425;
+    font-size: 12px;
+}
+
+.categorias ul ul li a:hover{
+    color: #00CCFF;
+    font-size: 14px;
+}
+
+.titulo{
+    width: 1150px;
+    height: 19px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+#lado-direito{
+    width: 950px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+}
+
+.montra{
+    margin-left: 30px;
+    padding: 5px;
+    width: 1150px;
+    height: auto;
+    border: solid 1px #ccc;
+    float: left;
+}
+
+.montra h2, .montra ul{
+    border: solid 2px #ccc;
+    padding: 2px;
+    background: #fbfbfb;
+}
+
+.montra h2{
+    height: 30px;
+}
+
+.montra ul{
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.montra li{
+    width: 232px;
+    margin: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    border: solid 1px #ccc;
+}
+
+.montra a{
+    color:#333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.montra figure{
+    margin-bottom: 10px;
+}
+
+.montra span{
+    color: #ff0000;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.montra input{
+    width: 94px;
+    height: 33px;
+    background: url(../Imagens/comprar.png) no-repeat;
+    border: 0;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+#rodape{
+    width: 100%;
+}
+
+#rodape2{
+    width: 100%;
+    height: 160px;
+}
+
+#caixa{
+    float: left;
+    width: 380px;
+    color: #fff;
+    margin-left: 150px;
+}
+
+.limpar{
+    clear:both;
+}
+
+#cx-img-produto{
+    width: 480px;
+    height: 480px;
+    border: solid 1px #ccc;
+    padding: 1px;
+    background-color: white;
+    margin-right: 10px;
+    float: left;
+}
+
+#cx-tit-produto{
+    width: 486px;
+    height: 480px;
+    border: solid 1px #ccc;
+    padding: 1px;
+    background-color: white;
+    margin-right: 2px;
+    float: right;
+}
+
+#cx-tit-produto h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#cx-tit-produto h1 a{
+    color:#333;
+    font-size: 22px;
+}
+
+#cx-tit-produto h1 a:hover{
+    color:#ff0000;
+}
+
+#cx-tit-produto h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    padding: 10px;
+}
+
+#marcas a{
+    float: right;
+    padding-right: 10px;
+}
+
+#cx-tit-produto p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    padding: 2px 10px;
+}
+
+#comprar{
+    float: right;
+    padding-right: 10px;
+}
+
+#abas-geral{
+    position: relative;
+    right: 510px;
+    float: left;
+    padding-top: 0;
+    width: 1005px;
+    margin: 10px auto;
+    background: #fff;
+}
+
+a li{
+    list-style-type: none;
+    font-size: 14px;
+    color:#f4f4f4
+}
+
+header{
+    width: 100%;
+    height: 0px;
+    position: fixed;
+    right: 100px;
+    bottom: 200px;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .menu{
+    width: 400px;
+}
+
+.menu{
+    position: fixed;
+    top: 60px;
+    width: 0px;
+    height: 100vh;
+    background: chocolate;
+    transition: all 500ms cubic-bezier(1,0,0,1);
+    overflow: hidden;
+}
+
+.menu li{
+    list-style: none;
+    padding: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+    display: block;
+    width: 400px;
+}
+
+.menu li:hover{
+    background: blue;
+    border-bottom: 1px solid white;
+}
+
+#box{
+	text-align:left;
+	border: 1px solid #999;
+	border-top: 5px;
+    clear: both;
+	float:left;
+	width: 995px;
+	background: #fff;
+	padding-left: 4px;
+	padding-right:7px;
+}
+
+.conteudo{
+	padding: 1px;
+	font-size: 1.2em;
+}
+
+.conteudo h2{
+    font-weight: normal;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 1.8em;
+}
+
+#descricao h2{
+    font-size: 16px;
+}
+
+#descricao p{
+    font-size: 12px;
+    text-align: justify;
+    padding: 10px 7px 5px 0;
+}
+
+
+/*resolução de smartphone*/
+@media(max-width: 576px){
+
+    #menu_principal{
+        width: 250px;
+    };
+}

@@ -1,0 +1,19 @@
+<?php
+	include_once('../classes/manipulacaoDeDados.php');
+
+	$cat = new manipulacaoDeDados();
+	$cat->setTabela('consolas');
+
+
+	$txt_titulo = $_POST['txt_titulo'];
+	$txt_ordem 	= $_POST['txt_ordem'];
+	$txt_ativo = $_POST['txt_ativo'];
+
+
+	$cat ->setCampos("nome, ordem_consolas, activo_consolas");
+	$cat ->setDados(" '$txt_titulo', '$txt_ordem', '$txt_ativo' ");
+	$cat-> inserir();
+
+	echo $cat->getMsg();
+
+?>
